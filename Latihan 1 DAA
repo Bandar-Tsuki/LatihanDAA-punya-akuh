@@ -1,0 +1,138 @@
+Cari nilai KPK dari 3 dan 4!
+Algoritma
+1. Cari FPB
+r=0
+step 1, apabila b!=0 nilai r diisi dengan sisa hasil bagi a dan b
+step 2, nilai a diganti dengan nilai dari b
+step 3, nilai b diganti dengan nilai dari r
+step 4, kembali ke step 1 apabila r != 0
+
+2. Cari KPK
+KPK=0
+step 1, nilai KPK diisi dengan operasi a*b lalu dibagi FPB
+step 2, hasil operasi ditunjukan dengan printf("%d", KPK)
+
+Pseucode
+
+int FPB(int a, int b){
+    int r = 0;
+    while(b!=0){
+        r = a % b;
+        a = b;
+        b = r;
+    }
+
+    return a;
+}
+
+int main(){
+int a=120;
+int b=88;
+int KPK=0;
+
+    KPK= a*b / FPB(a, b);
+    printf("%d", KPK);
+    return 0;
+}
+
+
+Ada 2 buah: manggis dan pisang. Manggis di piring 1, Pisang di piring 2. Piring 3 kosong.
+
+Algoritma :
+
+Piring 1 = Manggis
+Piring 2 = Pisang
+Piring 3 = null
+
+Step 1, Isi dari piring 1 dipindah ke piring 3
+Step 2, Isi dari piring 2 dipindah ke piring 1
+Step 3, Isi dari piring 3 dipindah ke piring 2
+
+Pseucode
+
+*/P1=manggis
+P2=Pisang
+P3=null*/
+
+P3=P1
+P1=P2
+P2=P3
+
+Tentukan algoritma dan pseudocode luas jajar genjang (panjang = 5, lebar = 3) !
+
+Algoritma:
+
+Step 1 Mendeklarasikan luas, alas, dan tinggi
+Step 2 Masukan alas = 5, tinggi = 3
+Step 3 Menghitung luas = alas*tinggi
+Step 4 Menampilkan luas
+
+Pseucode
+
+define alas = a
+define tinggi = t
+define luas = l
+
+declare
+a=5
+t=3
+
+main
+l=a*t
+l=5*3
+l=15
+
+print("luas = ", l)
+
+Tentukan algoritma dan pseudocode volume tabung (jari-jari = 3, tinggi = 5) !
+
+Algoritma:
+
+Step 1 Mendeklarasikan volume, jari jari, pi, dan tinggi
+Step 2 Masukan jari-jari = 3, tinggi = 5, pi = 3,14
+Step 3 Menghitung volume = pi * jari-jari^2 * tinggi
+Step 4 Menampilkan volume
+
+Pseucode
+
+define jari-jari = r
+define tinggi = t
+define volume = v
+
+declare
+r=3
+t=5
+pi=3,14
+
+main
+v=pi*r^2*t
+v=3,14*3^2*5
+
+print("volume = ", v)
+
+Tentukan algoritma dan pseudocode volume kerucut (diameter = 5, tinggi = 4) !
+
+
+Algoritma:
+
+Step 1 Mendeklarasikan volume, jari jari, pi, dan tinggi
+Step 2 Masukan diameter = 5, tinggi = 4, pi = 3,14
+Step 3 Menghitung volume = (pi * diameter^2 * tinggi)/12
+Step 4 Menampilkan volume
+
+Pseucode
+
+define diameter = d
+define tinggi = t
+define volume = v
+
+declare
+d=5
+t=4
+pi=3,14
+
+main
+v=(pi*d^2*t)/12
+v=(3,14*5^2*4)/12
+
+print("volume = ", v)
